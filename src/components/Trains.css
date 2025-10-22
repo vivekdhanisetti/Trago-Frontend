@@ -1,0 +1,237 @@
+:root {
+  --accent: #ff6a00;
+  --card: #fff;
+  --muted: #f8f8f8;
+  --border: #e5e5e5;
+  --dark: #1a1a1a;
+  --shadow: 0 4px 12px rgba(0,0,0,0.08);
+  --radius: 10px;
+  --max: 1100px;
+}
+
+/* Root */
+.trains-root {
+  padding: 24px;
+  font-family: Inter, sans-serif;
+  background: var(--muted);
+  color: var(--dark);
+}
+
+/* Search */
+.train-search-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow);
+  margin: 0 auto 24px;
+  max-width: var(--max);
+}
+
+.train-form .form-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 150px;
+}
+
+.field-label {
+  font-size: 13px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.field input,
+.field select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.field-error {
+  font-size: 12px;
+  color: red;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.primary-btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.link-btn {
+  background: transparent;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Offers */
+.train-offers {
+  max-width: var(--max);
+  margin: 0 auto 24px;
+}
+
+.offers-carousel {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 12px 0;
+}
+
+.offer-card {
+  min-width: 180px;
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 12px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.offer-badge {
+  background: var(--accent);
+  color: #fff;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+/* Results */
+.train-results {
+  max-width: var(--max);
+  margin: 0 auto 24px;
+}
+
+.results-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.train-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.train-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.train-header h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.train-header .number {
+  font-size: 13px;
+  color: #666;
+}
+
+.train-route {
+  font-size: 14px;
+  color: #444;
+}
+
+.train-time {
+  display: flex;
+  gap: 12px;
+  font-size: 13px;
+  color: #555;
+}
+
+.train-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.class {
+  font-size: 13px;
+  color: #333;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.book-btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Why choose us */
+.train-why {
+  max-width: var(--max);
+  margin: 0 auto 24px;
+  text-align: center;
+}
+
+.why-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  margin-top: 12px;
+}
+
+.why-card {
+  background: var(--card);
+  padding: 14px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  font-size: 14px;
+}
+
+/* Partners */
+.train-partners {
+  max-width: var(--max);
+  margin: 0 auto 24px;
+  text-align: center;
+}
+
+.partners-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.partner {
+  background: var(--card);
+  padding: 10px 18px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  font-weight: bold;
+}
