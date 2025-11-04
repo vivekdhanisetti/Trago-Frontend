@@ -1,0 +1,185 @@
+/* ---------- Page Layout ---------- */
+.food-page {
+  padding: 40px 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom right, #eef6ff, #eafaf1);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* ---------- Container ---------- */
+.food-container {
+  width: 90%;
+  max-width: 950px;
+}
+
+/* ---------- Glass Card ---------- */
+.glass-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- Header ---------- */
+.food-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.food-header h2 {
+  color: #1a237e;
+  font-size: 28px;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.food-header p {
+  color: #555;
+  font-size: 15px;
+}
+
+/* ---------- Form Section ---------- */
+.food-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.food-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Equal height and width for all inputs, selects, and button */
+.food-form input,
+.food-form select,
+.primary-btn.same-size {
+  height: 50px;                /* Slightly taller */
+  width: 230px;                /* Equal width for all three */
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  font-size: 15px;
+  background: #fff;
+  padding: 0 12px;
+  transition: all 0.2s ease;
+}
+
+.food-form input:focus,
+.food-form select:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 4px rgba(25, 118, 210, 0.3);
+}
+
+/* ---------- Buttons ---------- */
+.primary-btn {
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.primary-btn:hover {
+  background: #f57c00;
+  transform: translateY(-2px);
+}
+
+/* ---------- Error Text ---------- */
+.error-text {
+  color: #d32f2f;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ---------- Food Results ---------- */
+.food-results {
+  margin-top: 35px;
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Slightly wider cards */
+  gap: 25px;
+  justify-items: center;
+}
+
+/* ---------- Food Card ---------- */
+.food-card {
+  text-align: center;
+  padding: 25px;
+  width: 300px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- Larger Food Image ---------- */
+.food-img {
+  width: 140px;       /* Increased from 90px */
+  height: 140px;
+  object-fit: cover;  /* better fit for photos */
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+/* ---------- Food Text ---------- */
+.food-card h4 {
+  margin-bottom: 6px;
+  color: #333;
+  font-size: 17px;
+}
+
+.food-price {
+  color: #00796b;
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.food-card .primary-btn {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* ---------- No Results ---------- */
+.no-results {
+  text-align: center;
+  color: #777;
+  margin-top: 40px;
+  font-size: 16px;
+  font-weight: 500;
+}

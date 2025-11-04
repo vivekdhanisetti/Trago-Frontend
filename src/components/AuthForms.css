@@ -1,0 +1,134 @@
+/* ================================
+   Common Auth Page Styles
+   Matches Navbar + Hero Theme
+   ================================ */
+
+/* Page Layout */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff8e1; /* soft yellow */
+  padding: 20px;
+}
+
+/* Auth Card */
+.auth-card {
+  background-color: #131921; /* dark navy from navbar */
+  padding: 40px 35px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+}
+
+/* Brand Title */
+.auth-title {
+  color: #febd69;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Subheadings */
+.auth-subtitle {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* Form Inputs */
+.auth-card input[type="email"],
+.auth-card input[type="text"],
+.auth-card input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  color: #111;
+}
+
+.auth-card input:focus {
+  border-color: #febd69;
+  box-shadow: 0 0 6px rgba(254, 189, 105, 0.7);
+}
+
+/* Primary Button */
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #febd69;
+  color: #111;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-btn:hover {
+  background-color: #f90;
+}
+
+/* Back Button */
+.auth-back-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #37475a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-back-btn:hover {
+  background-color: #232f3e;
+  color: #febd69;
+}
+
+/* Disabled Button */
+.auth-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Alerts or Info Text */
+.auth-info {
+  color: #febd69;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 25px 20px;
+  }
+
+  .auth-title {
+    font-size: 20px;
+  }
+
+  .auth-subtitle {
+    font-size: 16px;
+  }
+}

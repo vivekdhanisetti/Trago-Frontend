@@ -1,0 +1,396 @@
+/* ---------------------------
+   Bank Transition Payment Page Styles
+---------------------------- */
+.bank-root {
+  padding: 30px;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', sans-serif;
+  color: #1f2937;
+  text-align: center;
+}
+
+.bank-header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 25px;
+}
+
+.bank-subheader {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3b82f6;
+  margin-bottom: 20px;
+}
+
+/* ---------------------------
+   Payment Method Buttons
+---------------------------- */
+.payment-method-selector {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.payment-method-btn {
+  background-color: #e0f2fe; /* blue-100 */
+  color: #1e40af; /* blue-800 */
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid #90cdf4; /* blue-300 */
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.payment-method-btn.active {
+  background-color: #3b82f6; /* blue-500 */
+  color: #ffffff;
+  border-color: #3b82f6;
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+  transform: translateY(-2px);
+}
+
+.payment-method-btn:hover:not(.active) {
+  background-color: #bfdbfe; /* blue-200 */
+  transform: translateY(-1px);
+}
+
+/* ---------------------------
+   Payment Detail Cards
+---------------------------- */
+.payment-details-card {
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.payment-details-card p {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* ---------------------------
+   Credit Card Payment
+---------------------------- */
+.credit-card-form {
+  text-align: center;
+  background-color: #f0fdf4; /* green-50 */
+  border: 1px solid #a7f3d0; /* green-200 */
+}
+
+.credit-card-form .form-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #065f46;
+  margin-bottom: 20px;
+}
+
+.credit-card-form .input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.credit-card-form label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 5px;
+}
+
+.credit-card-form .input-field {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #d1fae5;
+  border-radius: 6mm;
+  font-size: 1rem;
+  font-family: 'Roboto Mono', monospace;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+  transition: border-color 0.2s ease-in-out;
+}
+
+.credit-card-form .input-field:focus {
+  outline: none;
+  border-color: #34d399;
+  box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.2);
+}
+
+/* ---------------------------
+   QR Payment
+---------------------------- */
+.qr-scan-section {
+  text-align: center;
+  background-color: #fefce8;
+  border: 1px solid #fde68a;
+}
+
+.qr-scan-section .form-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #b45309;
+  margin-bottom: 20px;
+}
+
+.qr-code-placeholder {
+  width: 200px;
+  height: 200px;
+  background-color: #fff7ed;
+  border: 2px dashed #fbbf24;
+  border-radius: 8px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: #d97706;
+}
+
+.qr-code-placeholder .qr-image {
+  width: 150px;
+  height: 150px;
+  background-color: #fcd34d;
+  border-radius: 4px;
+}
+
+/* ---------------------------
+   VPN Payment
+---------------------------- */
+.vpn-payment-section {
+  text-align: center;
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+}
+
+.vpn-payment-section .form-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1e40af;
+  margin-bottom: 20px;
+}
+
+.vpn-payment-section .vpn-info {
+  font-size: 1.05rem;
+  color: #374151;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.vpn-payment-section .input-group {
+  margin-bottom: 15px;
+  text-align: left;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vpn-payment-section label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 5px;
+}
+
+.vpn-payment-section .input-field {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #90cdf4;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Roboto Mono', monospace;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+  transition: border-color 0.2s ease-in-out;
+}
+
+.vpn-payment-section .input-field:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* ---------------------------
+   Buttons & Indicators
+---------------------------- */
+.pay-button {
+  background-color: #10b981;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+  box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
+}
+
+.pay-button:hover {
+  background-color: #059669;
+  transform: translateY(-1px);
+}
+
+.pay-button:active {
+  transform: translateY(1px);
+}
+
+.secure-connection-status {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.secure-connection-indicator {
+  font-size: 0.95rem;
+  color: #047857;
+  background-color: #d1fae5;
+  padding: 8px 15px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.secure-connection-indicator.disconnected {
+  color: #dc2626;
+  background-color: #fee2e2;
+}
+
+.secure-connection-indicator svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ---------------------------
+   Summary Section
+---------------------------- */
+.bank-summary {
+  background-color: #fffbeb;
+  border: 1px solid #fcd34d;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.bank-summary h4 {
+  font-size: 1.6rem;
+  color: #b45309;
+  margin-bottom: 10px;
+}
+
+.bank-summary .total-amount {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #dc2626;
+  margin-bottom: 15px;
+}
+
+.bank-status {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.bank-status-pending {
+  background-color: #e0f2fe;
+  color: #1e40af;
+}
+
+.bank-status-success {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.bank-status-error {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.bank-note {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-top: 20px;
+}
+
+.countdown-timer {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ef4444;
+  margin-top: 15px;
+}
+
+/* ---------------------------
+   Error Messages
+---------------------------- */
+.error-message {
+  font-size: 0.9rem;
+  color: #ef4444;
+  margin-top: 8px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* ---------------------------
+   Responsive
+---------------------------- */
+@media (max-width: 768px) {
+  .bank-root {
+    padding: 20px;
+    margin: 20px auto;
+  }
+  .bank-header {
+    font-size: 2rem;
+  }
+  .bank-subheader {
+    font-size: 1.3rem;
+  }
+  .bank-summary h4 {
+    font-size: 1.4rem;
+  }
+  .bank-summary .total-amount {
+    font-size: 2rem;
+  }
+  .payment-method-selector {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .payment-method-btn {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .bank-root {
+    padding: 15px;
+    margin: 15px auto;
+  }
+  .bank-header {
+    font-size: 1.8rem;
+  }
+  .bank-subheader {
+    font-size: 1.1rem;
+  }
+  .payment-method-btn {
+    width: 100%;
+  }
+  .vpn-payment-section .input-group {
+    max-width: 100%;
+  }
+}
